@@ -11,3 +11,8 @@ make
 
 ./null0 cart.wasm
 ```
+
+This may not be totally possible with wasi-sdk. I got it working sharing functions, but they don't share memory, so pointers don't work. We might have to do this with emscriptne:
+
+- [Dynamic-Linking](https://emscripten.org/docs/compiling/Dynamic-Linking.html)
+- [usecase](https://helda.helsinki.fi/server/api/core/bitstreams/f535af54-70a8-4b35-a0aa-927543d4601c/content)
